@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magochix - Tienda Oficial & Marca Mago'x</title>
+  <meta name="description" content="Ropa, pantalones y accesorios de la marca Mago'x.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="/" aria-label="Magochix, inicio">
+        <span class="logo-mark">M</span>
+        <span class="logo-text"><strong>Magochix</strong><small>Marca oficial Mago'x</small></span>
+      </a>
+      <div class="search">
+        <input id="buscar" type="search" placeholder="Buscar prendas o marcas…" aria-label="Buscar productos" autocomplete="off">
+      </div>
+      <button id="btnCarrito" class="cart-btn" type="button" data-action="abrir-carrito" aria-label="Abrir carrito">
+        <span aria-hidden="true">🛒</span><span class="cart-label">Carrito</span><b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Nueva colección</p>
+      <h1>Estilo urbano, <span>hecho para ti</span></h1>
+      <p>Ropa, pantalones y accesorios de la marca Mago'x. Envío gratis en compras desde ₡60.000.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="chips" id="chips" role="tablist" aria-label="Categorías">
+        <button class="chip active" data-action="categoria" data-cat="todos" role="tab" aria-selected="true">Todo</button>
+        <button class="chip" data-action="categoria" data-cat="ropa" role="tab" aria-selected="false">Ropa</button>
+        <button class="chip" data-action="categoria" data-cat="pantalones" role="tab" aria-selected="false">Pantalones</button>
+        <button class="chip" data-action="categoria" data-cat="accesorios" role="tab" aria-selected="false">Accesorios</button>
+      </div>
+      <label class="sort">Ordenar:
+        <select id="orden" aria-label="Ordenar productos">
+          <option value="relevancia">Destacados</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+          <option value="nombre">Nombre (A-Z)</option>
+        </select>
+      </label>
+    </div>
+
+    <p id="resultadosInfo" class="info" aria-live="polite"></p>
+    <div id="gridProductos" class="grid-productos" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Magochix</strong> · Proyecto académico — los pagos son simulados y las facturas no tienen validez tributaria.</p>
+  </footer>
+
+  <!-- Detalle de producto -->
+  <div id="modalDetalle" class="modal" hidden>
+    <div class="modal-backdrop" data-action="cerrar"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Detalle del producto">
+      <button class="modal-close" data-action="cerrar" aria-label="Cerrar">✕</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div id="modalCarrito" class="modal drawer" hidden>
+    <div class="modal-backdrop" data-action="cerrar"></div>
+    <aside class="modal-panel" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+      <button class="modal-close" data-action="cerrar" aria-label="Cerrar">✕</button>
+      <div class="modal-body"></div>
+    </aside>
+  </div>
+
+  <!-- Pago -->
+  <div id="modalCheckout" class="modal" hidden>
+    <div class="modal-backdrop" data-action="cerrar"></div>
+    <div class="modal-panel wide" role="dialog" aria-modal="true" aria-label="Finalizar compra">
+      <button class="modal-close" data-action="cerrar" aria-label="Cerrar">✕</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Factura -->
+  <div id="modalFactura" class="modal" hidden>
+    <div class="modal-backdrop" data-action="cerrar"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Factura">
+      <button class="modal-close" data-action="cerrar" aria-label="Cerrar">✕</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

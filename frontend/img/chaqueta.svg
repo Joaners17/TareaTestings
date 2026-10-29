@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<defs><linearGradient id="gchaqueta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#gchaqueta)"/>
+<circle cx="330" cy="70" r="90" fill="#fff" opacity=".07"/><circle cx="60" cy="350" r="110" fill="#fff" opacity=".06"/>
+<ellipse cx="200" cy="360" rx="110" ry="12" fill="#000" opacity=".25"/>
+<g fill="#f1f5f9" stroke="#0f172a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path d="M125 112 L68 172 L88 300 L124 295 L130 332 L270 332 L276 295 L312 300 L332 172 L275 112 L255 90 Q200 130 145 90 Z" /><path d="M200 128 L200 332" fill="none"/><path d="M145 90 L200 128 L255 90" fill="none"/><rect x="145" y="250" width="34" height="8" rx="4"/><rect x="221" y="250" width="34" height="8" rx="4"/></g>
+</svg>

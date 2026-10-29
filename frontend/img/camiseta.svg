@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<defs><linearGradient id="gcamiseta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#gcamiseta)"/>
+<circle cx="330" cy="70" r="90" fill="#fff" opacity=".07"/><circle cx="60" cy="350" r="110" fill="#fff" opacity=".06"/>
+<ellipse cx="200" cy="360" rx="110" ry="12" fill="#000" opacity=".25"/>
+<g fill="#f1f5f9" stroke="#0f172a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path d="M130 90 L78 132 L104 178 L135 160 L135 322 L265 322 L265 160 L296 178 L322 132 L270 90 Q200 132 130 90 Z" /></g>
+</svg>

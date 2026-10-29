@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<defs><linearGradient id="gchino" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#312e81"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#gchino)"/>
+<circle cx="330" cy="70" r="90" fill="#fff" opacity=".07"/><circle cx="60" cy="350" r="110" fill="#fff" opacity=".06"/>
+<ellipse cx="200" cy="360" rx="110" ry="12" fill="#000" opacity=".25"/>
+<g fill="#f1f5f9" stroke="#0f172a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"><path d="M138 66 L262 66 L280 334 L214 334 L200 160 L186 334 L120 334 Z" /><rect x="138" y="66" width="124" height="22" rx="4"/><path d="M200 88 L200 160" fill="none"/><path d="M146 100 L176 124 M254 100 L224 124" fill="none"/><circle cx="200" cy="77" r="5" fill="#0f172a"/></g>
+</svg>
